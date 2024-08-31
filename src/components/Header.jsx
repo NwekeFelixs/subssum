@@ -1,6 +1,7 @@
 import React from "react";
 import { FaRegUser } from "react-icons/fa";
 import { GoBell } from "react-icons/go";
+import { Link } from "react-router-dom";
 
 const Header = ({ Message }) => {
   return (
@@ -16,9 +17,9 @@ const Header = ({ Message }) => {
           <button className="relative text-2xl text-blue-600 rounded-full border border-blue-200 border-solid bg-blue-100 bg-opacity-70 p-2">
             <GoBell size={18} />
           </button>
-          <button className="relative text-2xl text-blue-600 rounded-full border border-blue-200 border-solid bg-blue-100 bg-opacity-70 p-2">
+          <Link to="/profile" className="relative text-2xl text-blue-600 rounded-full border border-blue-200 border-solid bg-blue-100 bg-opacity-70 p-2">
             <FaRegUser size={18} />
-          </button>
+          </Link>
         </div>
       </div>
     </div>

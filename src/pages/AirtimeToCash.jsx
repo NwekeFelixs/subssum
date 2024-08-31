@@ -70,7 +70,7 @@ const AirtimeToCash = () => {
             />
           </div>
           <div className='flex justify-center mt-6'>
-            <button type="submit" className='bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-800 w-full'>Proceed</button>
+            <button type="submit" className='bg-blue-600 text-white px-6 py-3 text-md rounded-lg hover:bg-blue-800 w-full'>Proceed</button>
           </div>
         </form>
       </div>

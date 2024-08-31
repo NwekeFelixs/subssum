@@ -78,11 +78,11 @@ const Sidebar = () => {
             </Link>
             {index === 5 && isOpen && ( // Show dropdown for "Airtime To Cash"
               <div className="mt-2 flex gap-1 items-center">
-                <img src={mtn} alt="MTN" className="w-[54px] h-[40px]" />
-                <img src={airtel} alt="Airtel" className="w-[54px] h-[40px]" />
-                <img src={mobile} alt="9Mobile" className="w-[54px] h-[40px]" />
-                <span className="text-sm text-blue-800 flex items-center gap-1">
-                  More <RxCaretRight />
+                <img src={mtn} alt="MTN" className="w-[54px] h-[40px] cursor-pointer" />
+                <img src={airtel} alt="Airtel" className="w-[54px] h-[40px] cursor-pointer" />
+                <img src={mobile} alt="9Mobile" className="w-[54px] h-[40px] cursor-pointer" />
+                <span className="text-xs text-blue-800 flex items-center font-semibold cursor-pointer">
+                  More <RxCaretRight size={16} />
                 </span>
               </div>
             )}

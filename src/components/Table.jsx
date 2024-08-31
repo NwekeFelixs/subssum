@@ -48,7 +48,6 @@ const formatDateTime = (date) => {
     hour: '2-digit',
     minute: '2-digit',
     second: '2-digit',
-    timeZoneName: 'short'
   };
   return new Date(date).toLocaleDateString('en-US', options);
 };
@@ -111,20 +110,20 @@ const Table = () => {
                         <BsExclamationSquare className={`text-xl ${iconColor}`} />
                       )}
                       <div>
-                        <div className="font-semibold text-sm text-opacity-70 text-blue-800">{service.name}</div>
-                        <div className="text-sm text-opacity-70 text-blue-800 font-semibold">{service.phone}</div>
+                        <div className="font-bold text-xs text-opacity-70 text-blue-800">{service.name}</div>
+                        <div className="text-xs text-opacity-70 text-blue-800 font-semibold">{service.phone}</div>
                       </div>
                     </div>
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap font-semibold text-sm text-opacity-70 text-blue-800">₦{Math.floor(Math.random() * 10000)}</td>
-                  <td className="px-6 py-4 whitespace-nowrap font-semibold text-sm text-opacity-70 text-blue-800">₦{Math.floor(Math.random() * 10000)}</td>
+                  <td className="px-6 py-4 whitespace-nowrap font-bold text-xs text-opacity-70 text-blue-800">₦{Math.floor(Math.random() * 10000)}</td>
+                  <td className="px-6 py-4 whitespace-nowrap font-bold text-xs text-opacity-70 text-blue-800">₦{Math.floor(Math.random() * 10000)}</td>
                   <td className={`px-6 py-4 whitespace-nowrap ${colorClass}`}>
                     <span className={`text-md font-semibold text-sm`}>{status}</span>
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap font-semibold text-sm text-opacity-70 text-blue-800">{paymentMethods[rowIndex % paymentMethods.length]}</td>
-                  <td className="px-6 py-4 whitespace-nowrap font-semibold text-sm">
+                  <td className="px-6 py-4 whitespace-nowrap font-bold text-xs text-opacity-70 text-blue-800">{paymentMethods[rowIndex % paymentMethods.length]}</td>
+                  <td className="px-6 py-4 whitespace-nowrap font-bold text-xs">
                     <div>TRX{Math.floor(Math.random() * 100000)}</div>
-                    <span className="text-xs text-blue-900 text-opacity-50">{transactionDate}</span>
+                    <span className="text-xs text-blue-900 text-opacity-70 font-semibold">{transactionDate}</span>
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap">
                     <button className="text-blue-500 hover:text-blue-700 text-opacity-70 bg-blue-200 font-semibold px-2 py-[2px] rounded-xl text-sm">Open</button>
